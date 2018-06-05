@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Made by Bit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="estilosFlexbox.css">
+	<!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!-- Script del scroll -->
+    <script src="smoothscrolling2.js" type="text/javascript" charset="utf-8" async></script>
+    <!--Script para la animacion de la cabecera-->
+    <script src="cabecera.js" type="text/javascript" charset="utf-8" async></script>
+	
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <script type="text/javascript">
+		/*
+		$(window).load(function() {
+    		$(".loader").delay(2000).fadeOut("slow");
+		});
+		*/
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		function animacionTextoHeader(){
+    			$('#animacion-texto-header').addClass('animated fadeInRight').css("visibility","visible");
+    		}
+    		setInterval(animacionTextoHeader, 500); 
+    	});
+
+    </script>
+</head>
+<body>
+	<!--
+<div class="loader"></div>
+-->
+<header id="header" class="header">
+	<nav class="contenedor-header">
+		<div class="elemento-header"><a href="#inicio">inicio</a></div>
+		<div class="elemento-header"><a href="#conocenos">conócenos</a></div>
+		<div class="elemento-header"><a href="#servicios">servicios</a></div>
+		<div class="elemento-header"><a href="#portfolio">portfolio</a></div>
+		<div class="elemento-header"><a href="#contacta">contacta</a></div>
+		<div class="elemento-header"><a href="#blog">blog</a></div>
+		<div class="elemento-header redessociales-header"><img class="elementos-redessociales-header" src="img/rss.svg" alt="icono de rss" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/twitter.svg" alt="icono de twitter" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/facebook.svg" alt="icono de facebook" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/instagram.svg" alt="icono de instagram" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/pinteres.svg" alt="icono de pinterest" width="40px" height="40px"></div>
+	</nav>
+	<div class="texto-header">
+		<div id="texto-header">
+			<p id="animacion-texto-header"><strong>DESARROLLO WEB Y DISEÑO GRÁFICO</strong> SE DAN DE LA MANO PARA CREAR SOLUCIONES A TU MEDIDA.</p>
+		</div>
+	</div>
+</header>
+<main>
+	<div id="conocenos"></div>
+	<div class="trucaso conocenos">
+		<div class="marcacondescripcion">
+			<div id="logo-conocenos"><img src="img/logomadebybit.svg" alt="logo de made by bit" width="400px" height="400px"></div>
+			<div><img src="img/linea.svg" alt="linea de separacion" width="2px" height="400px"></div>
+			<div id="texto-conocenos"><p>Made by bit surgió de la necesidad de dos jóvenes sevillanos por querer dar a conocer sus conocimientos y creatividad.</p>
+			<p>Nuestra meta es la de conseguir la satisfacción de cada cliente con lo que más nos apasiona.  Por eso nuestros trabajos siempre van unidos de todo nuestro empeño e ilusión consiguiendo así proyectos profesionales y de calidad.</p>
+			<p>Siempre intentamos adaptarnos a nuestros clientes y no que ellos se adapten a nosotros, estudiando bien sus casos y necesidades para poder elaborar junto a ellos un proyecto del que se enamoren.</p>
+			<p>¿Formamos un equipo?</p>
+			</div>
+		</div>
+		<div class="fotosnosotros">
+			<div>
+				<div class="fotosnosotros-texto">
+					<img src="img/circulo.svg" alt="fotografia de Luki Martinez" width="300px" height="300px">
+					<div class="fotos-texto">
+						<p>Luciano Martínez</p>
+						<p class="titulo-foto">Desarrollador web</p>
+					</div>	
+				</div>
+			</div>
+			<div>
+				<div class="fotosnosotros-texto">
+					<img src="img/circulo.svg" alt="fotografia de Sonia Aguirre"
+					width="300px" height="300px">
+					<div class="fotos-texto">
+						<p>Sonia Aguirre</p>
+						<p class="titulo-foto">Diseñadora gráfica</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="servicios">
+		<div id="servicios"></div>
+		<div class="trucaso servicios-desglose">
+			<div class="servicio-desglose-filas">
+				<div class="servicio-desglose-fotos">
+					<img src="img/desarrolloweb.svg" alt="servicio de desarrollo web" width="100%" height="100%">
+				</div>
+				<div class="servicio-desglose-fotos">
+					<img src="img/diseñografico.svg" alt="servicio de diseño grafico" width="100%" height="100%">
+				</div>
+				<div class="servicio-desglose-fotos">
+					<img src="img/campañapublicidad.svg" alt="servicio de campaña de publicidad adwords" width="100%" height="100%">
+				</div>
+			</div>
+			<div class="servicio-desglose-filas">
+				<div class="servicio-desglose-fotos">
+					<img src="img/posicionamientoseo.svg" alt="servicio de posicionamiento SEO" width="100%" height="100%">
+				</div>
+				<div class="servicio-desglose-fotos">
+					<img src="img/especialistaswordpress.svg" alt="especialistas en wordpress" width="100%" height="100%">
+				</div>
+				<div class="servicio-desglose-fotos">
+					<img src="img/mantenimientoweb.svg" alt="servicio de mantenimiento web" width="100%" height="100%">
+				</div>
+			</div>
+		</div>
+		<div class="servicios-contacta">
+			<div class="servicio-contacta-vacio">
+				
+			</div>
+			<div class="servicios-contacta-texto">
+				<p class="texto-titulo">¿En qué podemos ayudarte?</p>
+				<p class="texto-centrado">Ponte en contacto con nosotros y pide presupuesto sin ningún compromiso, nosotros estaremos encantados de ayudarte y formar equipo contigo.</p>
+				<a class="texto-enlace" href="#" title="cuentanos tu idea">Cuéntanos tu idea</a>
+			</div>
+		</div>
+	</div>
+</main>
+<footer>
+	made by bit
+</footer>
+</body>
+</html>
