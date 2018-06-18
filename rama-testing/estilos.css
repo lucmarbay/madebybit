@@ -1,0 +1,243 @@
+body{
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+main{
+	margin-top: 200px;
+	width: 100%;
+	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   	/*justify-content: center;*/
+}
+.conocenos{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 1000px;
+	/*background-color: lightgrey;*/
+	flex-wrap: nowrap;
+}
+.logo-texto-conocenos{
+	margin: 2px 2px 50px 2px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 450px;
+	align-items: center;
+	/*background-color: lightgreen;*/
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.logo-conocenos{
+	width: 33.3%;
+	margin-right: 5px;
+}
+.lineaseparacion-conocenos{
+
+}
+.texto-conocenos{
+	width: 33.3%;
+	margin-left: 20px;
+}
+.foto-texto-conocenos{
+	margin: 50px 2px 2px 2px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 550px;
+	justify-content: space-around;
+	/*background-color: lightblue;*/
+}
+.luki-foto-texto-conocenos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.sonia-foto-texto-conocenos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.text-piefoto{
+	
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	flex-wrap: nowrap;
+  	text-align: center;
+}
+.titulo-foto{
+  	align-self: flex-start;
+  	margin-top: -15px;
+}
+.servicios{
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 1650px;
+	/*background-color: lightgreen;*/	
+}
+.imagenes-servicios{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 50%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+.elementos-imagenes-servicios{
+	width: 33%;
+	margin: 2px;
+}
+.cuentanos-servicios{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	width: 100%;
+	height: 50%;
+	background-image: url("img/fondoservicios.jpg");
+  	background-size: cover;
+  	justify-content: flex-end;
+}
+.texto-cuentanos-servicios{
+	width: 55%;
+	height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+.texto-titulo{
+	font-size: 3em;
+}
+.texto-centrado{
+	font-size: 1.5em;
+}
+.portfolio{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 800px;
+	/*background-color: lightblue;*/
+	margin-top: 100px;
+}
+.texto-portfolio{
+	text-align: center;
+	font-size: 1.5em;
+}
+.imagenes-portfolio{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 80%;
+	/*background-color: lightgrey;*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+.elementos-imagenes-portfolio:hover .image {
+	opacity: 0.3;
+}
+.elementos-imagenes-portfolio:hover .middle {
+	opacity: 1;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-middle {
+	z-index: 1;
+  background-color: #4CAF50;
+  color: red;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.elementos-imagenes-portfolio{
+	width: 33%;
+	padding: 1px;
+}
+.contacta{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 600px;
+	background-color: #83a5ce;
+	margin-top: 100px;
+}
+.texto-contacta{
+width: 50%;
+}
+.formulario-contacta{
+width: 50%;
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 250px;
+	background-color: lightgreen;
+	margin-top: 100px;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #33C7FF;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #33C7FF;
+  text-decoration: none;
+}
+.texto-enlace {
+  text-decoration: underline overline;
+  font-size: 38px;
+}
+.texto-enlace:link {
+  text-decoration: underline overline;
+}
+.texto-enlace:visited {
+  text-decoration: underline overline;
+}
+.texto-enlace:hover {
+  text-decoration: underline overline;
+  color: #354984;
+}
+.texto-enlace:active {
+  text-decoration: underline overline;
+  color: #354984;
+}
