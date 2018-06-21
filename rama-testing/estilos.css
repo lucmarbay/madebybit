@@ -191,10 +191,37 @@ main{
 }
 .texto-contacta{
 width: 50%;
+text-align: center;
 }
 .formulario-contacta{
 width: 50%;
+display: flex;
+flex-direction: column;
 }
+form {
+  display: grid;
+  padding: 1em;
+  background: #83a5ce;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  padding: 1em;
+}
+form input {
+  background: #83a5ce;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+/* all */
+::-webkit-input-placeholder { color:white; }
+::-moz-placeholder { color:white; } /* firefox 19+ */
+:-ms-input-placeholder { color:white; } /* ie */
+input:-moz-placeholder { color:white; }
+ 
 footer{
 	display: flex;
 	flex-direction: row;

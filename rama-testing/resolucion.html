@@ -130,24 +130,23 @@
 		</div>
 		<div class="contacta">
 			<div class="texto-contacta">
-				
+				<p>¿Tienes alguna duda?</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
 			</div>
 			<div class="formulario-contacta">
 				<!--Formulario-->
-				<FORM id="contacto" name="contacto" action="enviar.php" method="POST">
-					<p>
-					<label>Nombre y apellidos<input name="nombre" type="text" id="nombre"
-					 size="42"/></label>
-					</p>
-					<p><label>Correo electrónico<input name="mail" type="text" id="mail" size="43"/>
-					</label>
-					</p>
-					<p><label>Mensaje<br>
-					<textarea name="mensaje" cols="40" rows="8" id="mensaje">
-					</textarea></label>
-					</p>
-					<p><input type="submit" name="Submit" value="Enviar"/></p>
-				</FORM>
+				<form id="contacto" name="contacto" action="enviar.php" method="POST">
+					
+					<input name="nombre" placeholder="Nombre y apellidos" type="text" id="nombre"
+					 size="42"/> <br>
+					
+					<input name="mail" placeholder="Correo electrónico" type="text" id="mail" size="43"/> <br>
+					
+					<textarea name="mensaje" placeholder="mensaje" cols="40" rows="8" id="mensaje">
+					</textarea> <br>
+		
+					<input type="submit" name="Submit" value="Enviar"/>
+				</form>
 			</div>
 		</div>
 		<footer>
