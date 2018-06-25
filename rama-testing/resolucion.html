@@ -5,9 +5,44 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!-- Script del scroll -->
+    <script src="js/smoothscrolling2.js" type="text/javascript" charset="utf-8" async></script>
+    <!--Script para la animacion de la cabecera-->
+    <script src="js/cabecera.js" type="text/javascript" charset="utf-8" async></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		function animacionTextoHeader(){
+    			$('#animacion-texto-header').addClass('animated fadeInRight').css("visibility","visible");
+    		}
+    		setInterval(animacionTextoHeader, 500); 
+    	});
+
+    </script>
 </head>
 <body>
+	<header id="header" class="header">
+	<nav class="contenedor-header">
+		<div class="elemento-header"><a href="#inicio">inicio</a></div>
+		<div class="elemento-header"><a href="#conocenos">conócenos</a></div>
+		<div class="elemento-header"><a href="#servicios">servicios</a></div>
+		<div class="elemento-header"><a href="#portfolio">portfolio</a></div>
+		<div class="elemento-header"><a href="#contacta">contacta</a></div>
+		<div class="elemento-header"><a href="#blog">blog</a></div>
+		<div class="elemento-header redessociales-header"><img class="elementos-redessociales-header" src="img/rss.svg" alt="icono de rss" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/twitter.svg" alt="icono de twitter" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/facebook.svg" alt="icono de facebook" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/instagram.svg" alt="icono de instagram" width="40px" height="40px"><img class="elementos-redessociales-header" src="img/pinteres.svg" alt="icono de pinterest" width="40px" height="40px"></div>
+	</nav>
+	<div class="texto-header">
+		<div id="texto-header">
+			<p id="animacion-texto-header"><strong>DESARROLLO WEB Y DISEÑO GRÁFICO</strong> SE DAN DE LA MANO PARA CREAR SOLUCIONES A TU MEDIDA.</p>
+		</div>
+	</div>
+</header>
 	<main>
+		<div id="conocenos"></div>
 		<div class="conocenos">
 			<div class="logo-texto-conocenos">
 				<div class="logo-conocenos">
@@ -44,7 +79,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="servicios">
+		<div id="servicios"></div>
+		<div class="servicios">			
 			<div class="imagenes-servicios">
 				<div class="elementos-imagenes-servicios">
 					<img src="img/desarrolloweb.svg" alt="servicio de desarrollo web" width="100%" height="auto">
@@ -73,6 +109,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="portfolio"></div>
 		<div class="portfolio">
 			<div class="texto-portfolio">
 				<h1>Algunos de nuestros trabajos</h1>
@@ -128,6 +165,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="contacta"></div>
 		<div class="contacta">
 			<div class="texto-contacta">
 				<p>¿Tienes alguna duda?</p>
