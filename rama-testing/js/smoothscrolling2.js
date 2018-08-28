@@ -9,5 +9,5 @@ $("nav").on('click','a',function (event) {
 		}
 		$('body,html').animate({
 			scrollTop: resultado
-		},500);
+		},1000);
 });
